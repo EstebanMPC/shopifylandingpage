@@ -1,0 +1,271 @@
+* {
+  margin: 0%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.backgroundimg {
+  background-image: url(.//background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 80vh;
+  width: 100%;
+}
+
+.container {
+  /* display: flex; */
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  height: 70px;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header h3 {
+  font-size: 23px;
+  font-weight: 400;
+  width: 80%;
+}
+
+.enter-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.enter-info input {
+  width: 80%;
+  padding: 1em 0.94em;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 15px;
+  max-width: 500px;
+}
+
+#button {
+  margin: 30px 0px;
+}
+
+.enter-info > a:link {
+  text-decoration: none;
+}
+
+.btn-1 {
+  border: transparent;
+  border-radius: 4px;
+  padding: 14px 1.8125em;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background: #212326;
+  width: 75%;
+  max-width: 500px;
+}
+
+.enter-info h5 {
+  width: 88%;
+  text-align: center;
+  margin-left: 30px;
+  font-weight: lighter;
+  margin-bottom: 80px;
+}
+
+.store.img {
+  width: 309px;
+  height: 247px;
+}
+
+.benefits {
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.fas {
+  color: #008060;
+  width: 50px;
+  align-items: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 400px;
+}
+
+.benefits h3:only-of-type {
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  text-align: start;
+  margin: 0 32px;
+}
+
+.benefits p:only-of-type {
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  color: #6b7177;
+  text-align: start;
+  margin: 0 32px;
+  line-height: 1.6;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid #d2d5d9;
+  border-bottom: 1px solid #d2d5d9;
+  margin: 0 32px;
+  margin-bottom: 50px;
+}
+
+.reviews-container img:only-of-type {
+  padding: 15px;
+}
+
+.footer h3 {
+  color: #212326;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  margin: 0 32px;
+}
+
+.footer p {
+  color: #42474c;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.btn-2 {
+  border-radius: 4px;
+  padding: 1em 1.8125em;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background: #008060;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.links {
+  text-decoration: none;
+  color: #008060;
+  line-height: 1.6;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .enter-info {
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .enter-info input {
+    width: 50%;
+    margin: 0 30px;
+  }
+
+  .btn-1 {
+    border: transparent;
+    border-radius: 4px;
+    padding: 14px 1.8125em;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background: #212326;
+    width: 15%;
+  }
+
+  .benefits {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fas {
+    color: #008060;
+    width: 50px;
+    margin-right: 700px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+  }
+
+  .enter-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .enter-info input {
+    width: 50%;
+    max-width: 50%;
+    margin: 0 40px;
+  }
+
+  .benefits {
+    width: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 100px;
+  }
+
+  .fas {
+    color: #008060;
+    width: 50px;
+    margin: 0;
+    justify-content: left;
+  }
+
+  .btn-1 {
+    margin-top: 15px;
+  }
+}
